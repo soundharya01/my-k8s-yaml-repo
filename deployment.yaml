@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: text-deployment
+  labels:
+    app: text
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: text
+  template:
+    metadata:
+      labels:
+        app: text
+    spec:
+      containers:
+      - name: text
+        image: text:latest
+        ports:
+        - containerPort: 80
