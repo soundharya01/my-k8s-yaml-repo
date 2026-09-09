@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: text
-        image: text:latest
+        image: soundharyamoorthi/new-demo:latest
         ports:
         - containerPort: 80
