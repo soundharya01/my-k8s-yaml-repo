@@ -15,7 +15,7 @@ spec:
         app: text
     spec:
       containers:
-      - name: text
-        image: soundharyamoorthi/new-demo:latest
-        ports:
-        - containerPort: 80
+        - name: text
+          image: soundharyamoorthi/my-app:11d095d
+          ports:
+            - containerPort: 80
